@@ -1,0 +1,98 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@font-face {
+    font-family: Mogena;
+    src: url("fonts/Mogena.ttf");
+}
+
+/* Styling the Navigation */
+nav li{
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    background-color: #FBCF03;
+    display: inline;
+    font-size: 25px;
+    text-align: center; 
+    padding: 10px;
+    border: #01274D solid 3px;
+}
+
+nav li a{
+    color: #01274D;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.active{
+    text-transform: uppercase;    
+}
+
+nav a:hover{
+    text-decoration-style: wavy;
+}
+
+/* Styling the Body */
+body{
+    background-color: #E8F1FF;
+}
+
+/* Adding an Animation */
+#animation{
+    width: 200px;
+    animation: portfolio_move 6s; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes portfolio_move{
+    from{width: 40px;}
+    to{width: 200px;}
+
+}
+    /* Removes Animation if Prefers-Reduced-Motion is selected */
+@media screen and (prefers-reduced-motion: reduce){
+    #animation{
+        animation:none;
+    }
+}
+/* Styling the Header */
+.myHeader{
+    font-size: 500%;
+    font-family: Mogena;
+    color: #01274D;
+    text-align: center;
+}
+
+/* Styling the Footer */
+footer{
+    background-color: #FBCF03;
+    padding: 10px;
+    border: #01274D solid 3px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #01274D;
+
+}
+
+/* Styling the About page */
+#aboutInfo{
+    font-family: Mogena;
+    font-size: 25px;
+}
+
+.aboutSWIE, .aboutSWIEmore{
+    margin: 20px;
+    padding: 10px;
+    border: #01274D solid 5px;
+    border-radius: 10px;
+    background-color: #D9CDE6;
+    color: #01274D;
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+
+}
