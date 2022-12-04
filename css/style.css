@@ -1,0 +1,435 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+
+
+/* Implemetning the Skip to Main Content */
+a.skip{ 
+    background: #D9CDE6;
+    border: solid 3px #01274D;
+    color: #01274D;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: -50px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top: 20px;
+    color: #01274D;
+    text-decoration-style: solid;
+}
+
+/* Styling the Animation */
+#animation{
+    display: none;
+}
+
+/* Styling the Navigation */
+
+nav li{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    background-color: #FBCF03;
+    display: inline;
+    font-size: 20px;
+    text-align: center; 
+    padding: 10px;
+    border: #01274D solid 3px;
+    
+}
+
+nav li a{
+    color: #01274D;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.active{
+    text-transform: uppercase;
+    background-color: #D9CDE6;    
+}
+
+nav a:hover{
+    text-decoration-style: wavy;
+}
+
+/* Styling the Body */
+body{
+    background-color: #E8F1FF;
+}
+
+/* Styling the Header */
+.myHeader{
+    font-size: 400%;
+    font-family: 'Shrikhand';
+    color: #01274D;
+    text-align: center;
+}
+
+/* Styling the Footer */
+footer{
+    background-color: #FBCF03;
+    padding: 10px;
+    border: #01274D solid 3px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #01274D;
+}
+
+/* Styling the About page */
+#aboutInfo, #aboutInfoMore{
+    font-family: 'Shrikhand';
+    font-size: 25px;
+}
+
+.aboutSWIE, .aboutSWIEmore{
+    margin: 20px;
+    padding: 25px;
+    border: #01274D solid 5px;
+    border-radius: 10px;
+    background-color: #D9CDE6;
+    color: #01274D;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 17px;
+    box-shadow: 10px 10px 7px #01274D;
+}
+
+.aboutSWIEmore ol{
+    list-style: square;
+    padding: 10px;
+}
+
+/* Styling the Past Events Page */
+
+.gallery img{
+    border: #D9CDE6 solid 25px; 
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.imagetext{
+    background-color: #D9CDE6;
+    margin: 30px;
+    width: 550px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;  
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #01274D;
+}
+
+
+/* Styling the Photos Page */
+    .images{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+        grid-column: 1 / span 1;
+    }
+
+    .five{
+        grid-row-start: 1;
+    }
+    .eight{
+        grid-row-start: 2;
+    }
+    .three{
+        grid-row-start: 3;
+    }
+    .nine{
+        grid-row-start: 4;
+    }
+    .six{
+        grid-row-start: 5;
+    }
+    .seven{
+        grid-row-start: 6;
+    }
+    .four{
+        grid-row-start: 7;
+    }
+    .two{
+        grid-row-start: 8;
+    }
+    .one{
+        grid-row-start: 9;
+    }
+
+    .lb-data .lb-caption{
+        font-size: 25px;
+        font-family: 'Montserrat';
+        color: #01274D;
+        background-color: #D9CDE6;
+        
+    }
+    .lb-data .lb-number{
+        font-size: 15px;
+        font-family: 'Montserrat';
+        color: white;
+        background-color: #01274D;
+
+        
+    }
+    .lightbox .lb-image{
+        border: #FBCF03 5px solid;
+        border-radius: 5px;
+    }
+
+/* Styling the How to Join Page */
+
+    form {
+        border: 5px solid #01274D;
+        border-radius: 10px;
+        background-color: #D9CDE6;
+        margin: 20px;
+        padding: 10px;
+        box-shadow: 10px 10px 7px #01274D;
+    }
+
+    legend {
+        font-size: 25px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color:#01274D;
+        text-align: center;
+        
+
+    }
+    input {
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color:#01274D;
+
+    }
+
+    label{
+        font-size: 17px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color:#01274D;
+    }
+
+    #year{
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color:#01274D;
+    }
+
+
+/* The following specifications are for when the screen-size is greater than 700 px (tablet) */
+@media all and (min-width: 768px) {
+    
+    /* Styling the Header */
+        .myHeader{
+            font-size: 450%;
+        }
+
+    /* Styling the Navigation */
+        #animation{
+            display: none;
+        }
+        
+        nav li{
+            width: 25%;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+    /* Styling the Photos Page */
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        overflow: scroll;
+        justify-content: space-between;
+        align-items: start;
+        justify-items: stretch;
+    }
+
+    .seven{
+        grid-column: 1 / -1;
+        grid-row-start: 1;
+    }
+
+    .five{
+        grid-column: 2 / span 1;
+        grid-row-start: 2;
+    }
+
+    .one{
+        grid-column: 1 / span 1;
+        grid-row-start: 2;
+    }
+
+    .eight{
+        grid-column: 1 / span 2;
+        grid-row-start: 3;
+    }
+
+    .three{
+        grid-column: 1 / span 1;
+        grid-row-start: 4;
+    }
+
+    .nine{
+        grid-column: 2 / span 1;
+        grid-row-start: 4;
+
+    }
+
+    .two {
+        grid-column: 1 / -1;
+        grid-row-start: 5;
+    }
+
+    .four{
+        grid-column: 1 / span 1;
+        grid-row-start: 6;
+    }
+
+    .six{
+        grid-column: 2 / span 1;
+        grid-row-start: 6;
+
+    }
+    /* Styling the Past Events Page */
+
+    .gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        overflow: scroll;
+        align-items:flex-start;
+}
+    .imagetext:nth-child(1), .imagetext:nth-child(2), .imagetext:nth-child(3){
+        display: none;
+    }
+
+}
+
+/* The following specifications are for when the screen-size is greater than 900 px (larger screen) */
+@media all and (min-width: 1080px) {
+
+    /* Styling the Header */
+        .myHeader{
+            font-size: 500%;
+        }
+        
+
+    /* Styling the Navigation */
+    nav li{
+        font-size: 25px;
+        border-radius: 0px;
+    }
+    
+
+    /* Styling the Photos Page */
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        overflow: scroll;
+        gap: 7px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .one, .two, .nine {
+        grid-column: 1 / span 1;
+    }
+
+    .three, .five, .seven {
+        grid-column: 2 / span 1;
+    }
+
+    .four, .eight, .six {
+        grid-column: 3 / span 1;
+    }
+
+    .two, .three, .four {
+        grid-row-start: 1;
+    }
+
+    .one, .seven, .eight {
+        grid-row-start: 2;
+    }
+
+    .five, .six, .nine {
+        grid-row-start: 3;
+    }
+
+    /* Styling the Past Events Page */
+
+    .gallery img{
+        border: #D9CDE6 solid 25px;
+        
+    }
+
+    .gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        overflow: scroll;
+    }
+
+    .imagetext:nth-child(1), .imagetext:nth-child(2), .imagetext:nth-child(3){
+        display: unset;
+    }
+
+    /* Adding an Animation */
+    #animation{
+        width: 200px;
+        animation: portfolio_move 6s; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @keyframes portfolio_move{
+        from{width: 40px;}
+        to{width: 200px;}
+
+    }
+        /* Removes Animation if Prefers-Reduced-Motion is selected */
+    @media screen and (prefers-reduced-motion: reduce){
+        #animation{
+            animation:none;
+        }
+    }
+
+
+    }
